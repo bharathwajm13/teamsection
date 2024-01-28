@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+	height:100vh;
+	width:85%;
+	margin:auto;
+    padding: 2px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+.column{
+	width:30%;
+	padding: 10px;  
+}
+.title h4{
+    color: gray;
+    font-size: 20px;
+}
+.title h1{
+    padding-top: 5px;
+    font-size: 35px;
+}
+h4::after{
+    content: "";
+    display: inline-block;
+    background-color:  #f09516;
+    width: 8%;
+    height: 2px;
+	margin:5px;
+}
+.card{
+    border-radius:4px 4px 0 0;
+    box-shadow: 0 0 10px #939090;
+}
+.image img{
+    width:100%;
+	border-radius:4px 4px 0 0;
+}
+.image{
+    position: relative;
+}
+.icons{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right:0;
+    bottom: 30px;
+    transition: ease-in-out 0.4s;
+    text-align: center;
+}
+.social{
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    transition: ease-in-out 0.4s;
+    background-color: #EBECF1;
+    color: black;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+}
+.image:hover .icons{
+    opacity: 2;
+    position: absolute;
+    padding-left: 5px;
+}
+.social:hover{
+    background-color: #f09516;
+}
+.content{
+    padding: 25px;
+}
+.name{
+    font-size: 25px;
+}
+.role{
+    color: #73777B;
+    padding-top:3px;
+}
